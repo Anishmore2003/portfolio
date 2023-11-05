@@ -1,0 +1,205 @@
+.main {
+    width: 50%; /* Adjust the width as needed */
+    margin-left: 45%;
+    margin-bottom: 10%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+main{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Social media styles */
+.li {
+    display: inline;
+    margin-right: 25px;
+}
+
+ul.social-media {
+    position: fixed;
+    bottom: 10px; /* Adjust the bottom position as needed */
+    left: 10%; /* Adjust the left position as needed */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: fixed;
+}
+
+ul.social-media li {
+    margin: 0 10px;
+}
+
+/* General body and HTML styles */
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0f172a;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(at 300px 300px, #122044, #0f172a 50%);
+}
+
+/* Skill styles */
+.wide-text {
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold; /* Example bold text */
+    font-family: Arial, sans-serif; /* Example font family */
+    margin-bottom: 10px; /* Example margin */
+}
+
+/* Style for the white background container */
+.white-background {
+    background-color: #4e6379;
+    padding: 1px;
+}
+
+/* Position styles */
+.left {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    margin-right: 50%;
+    text-align: left;
+    z-index: 1;
+}
+
+.right {
+    width: 100%;
+    height: 600px;
+    z-index: 2;
+     /* Ensure it's not covered by the fixed left side */
+    /* z-index: 100; */
+    /* Add any additional styles you need for the right side */
+}
+
+.indented-paragraph {
+    text-indent: 40px; /* Adjust the value for desired indentation */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Main body text font */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Headers and titles */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Paragraph text */
+}
+
+/* Example for using a different font for code snippets */
+.code-snippet {
+    font-family: 'Fira Code', monospace;
+}
+
+/* Increase font size for different sections */
+
+/* Body text font size */
+body {
+    font-size: 16px; /* You can change this value as needed */
+}
+
+/* Headers font size */
+h1 {
+    font-size: 2.5em; /* Example: Adjust the value to increase header size */
+}
+
+h2 {
+    font-size: 2em; /* Example: Adjust the value to increase header size */
+}
+
+h3 {
+    font-size: 1.5em; /* Example: Adjust the value to increase header size */
+}
+
+/* Paragraph text font size */
+p {
+    font-size: 18px; /* Example: Adjust the value to increase paragraph text size */
+}
+
+/* Example for code snippets font size */
+.code-snippet {
+    font-size: 14px; /* Example: Adjust the value for code snippet text size */
+}
+
+/* Original CSS remains above */
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    .left {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    ul.social-media {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .wide-text {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+
+    .indented-paragraph {
+        text-indent: 0; /* Remove indentation for smaller screens */
+    }
+
+    .main {
+        width: 90%; /* Adjust the width as needed */
+        margin: 5% auto; /* Center the content */
+        overflow: visible; /* Remove scroll for smaller screens */
+    }
+}
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    /* Other CSS rules remain the same as previously mentioned */
+
+    /* Centering the "Here" link and arrows in the middle */
+    div.resume-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div.resume-link img {
+        margin: 0 5px; /* Adjust the margin for spacing between elements */
+    }
+
+    @media (max-width: 768px) {
+        /* Hide social media icons on mobile */
+        ul.social-media {
+            display: none;
+        }
+    }
+}
