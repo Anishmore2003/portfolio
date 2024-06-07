@@ -77,5 +77,5 @@ function sendMessage() {
     const encodedMessage = encodeURIComponent(messageString);
     
     // Open WhatsApp link with encoded message
-    window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/7218233504?text=${encodedMessage}`, '_blank');
 }
