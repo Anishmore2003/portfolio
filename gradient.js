@@ -55,3 +55,27 @@ function sendMessage() {
     }
     return false; // To prevent default form submission
 }
+
+// Function to collect form data and send message via WhatsApp
+function sendMessage() {
+    // Prevent form from submitting
+    event.preventDefault();
+    
+    // Get form element by ID
+    const form = document.getElementById('messageForm');
+    
+    // Get values from form inputs
+    const name = form.elements['Name'].value;
+    const email = form.elements['Email'].value;
+    const subject = form.elements['Subject'].value;
+    const message = form.elements['Message'].value;
+    
+    // Construct the message string
+    const messageString = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+    
+    // Encode message string for URL
+    const encodedMessage = encodeURIComponent(messageString);
+    
+    // Open WhatsApp link with encoded message
+    window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
+}
